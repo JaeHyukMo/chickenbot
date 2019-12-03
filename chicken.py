@@ -4,7 +4,7 @@ import random
 
 import math
 
-
+import os
 
 
 client = discord.Client()
@@ -170,5 +170,5 @@ async def on_message(message):
 
 
 
-
-client.run("NjUwOTI5OTEyNTIxMTYyNzc0.XeTg7g.EvFXfXWL5QhOf2y5oN_ml7K4Ak4")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
